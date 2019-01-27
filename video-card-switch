@@ -1,0 +1,14 @@
+#!/bin/bash
+
+######################################################################
+# Script for pm-utils to switch between nvidia and intel video cards #
+######################################################################
+
+SWITCHING_TO_BATTERY_POWER="$1"
+if [ "$SWITCHING_TO_BATTERY_POWER" == "true" ]; then
+        prime-select intel
+else
+if [ "$SWITCHING_TO_BATTERY_POWER" == "false" ]; then
+        prime-select nvidia
+fi
+fi
